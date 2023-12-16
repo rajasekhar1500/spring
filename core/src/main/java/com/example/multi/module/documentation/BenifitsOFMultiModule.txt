@@ -1,0 +1,12 @@
+Benefits:
+
+    * When you are working on new functionality or bug fixes for a certain part of the project, you can simply
+      focus on that module and run just the tests for that module, compiling a fraction of the entire projects code
+      and running just the related tests. This speeds up development time.
+    * You can re-use the code from modules across different projects. Let's assume your project contains some well-written
+      generic code for sending emails. if you later have another project that needs email sending functionality, you
+      can simply re-use your existing module or build upon it(in another module by adding it as a dependency).
+    * Easier maintainability in the long run. Perhaps now your project seems small. In a few months things might look
+      different and at that time it might be more work refactoring your project to spllit things into logical units(modules).
+    * One single maven command to build all your modules at once.
+    * And the most important: maven takes care of the build order for you.

@@ -1,0 +1,14 @@
+UML:
+    * The Unified Modeling Language(UML) is a standard visual modeling language intended ot be used for
+        * modeling business and similar processes,
+        * analysis, design, and implementation of software-based systems.
+
+    * UML is a common language for business analysts, software architects and developers used to describe, specify,
+      design, and document existing or new business processes, structure and behavior of artifacts of software systems.
+
+    * UML can be applied to diverse application domains(eg., banking, finance, internet, aerospace, healthcare, etc).
+
+    * It can be used with all major object and component software development methods and for various implementation
+      platforms(e.g., JavaEE, .NET).
+
+    * In simple terms UML can visually describe class diagrams, use cases diagrams and related items.
