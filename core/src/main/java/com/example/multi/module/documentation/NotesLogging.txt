@@ -1,0 +1,71 @@
+Logging:
+    * Logging is keeping a record of specific information from a program execution.
+    * Logging is one of the most powerful tools in programmer's toolbox.
+    * Logging gives you data showing what your code is doing and allows you to rapidly develop and debug software. Appropriate logging helps answer nearly any
+      question about what a program is doing.
+    * There are two aspects related to increasing visibility into programs you run:
+        the first is visibility into what your code is doing after it's running and people are using the software.
+        The second is visibility into your code during development. Visibility into the behavior of shipped code is equally important as visibility into code
+        behavior during development.
+    * With good logging in place, it's easier for other developers to see exactly what your code is doing.
+    * The first and foremost advantage of any logging API over plan System.out.println's resides in its ability to filter. You can choose what to show and
+      what not to show.
+    * The great thing about logging is that it is possible categorize logging statements according to specific developer-chosen criteria.
+    * Logging will also help you to see how Spring handles everything internally. In other words how the spring container starts up, etc.
+
+Logging use cases:
+    * Debugging software during development.
+    * Help to diagnose bugs during production-when your application is live.
+    * Tracing access for security purposes.
+    * Creating data for statistical use.
+    * Whatever the use case is, logs should be detailed, configurable and reliable.
+
+Slf4j - the Logging API
+    * There are 2 aspects to a well-configured logging system: API and implementation.
+    * The Logging API is what will be used at the application layer directly; in other words, what you will code. The logging API is the facade or interface
+      that you as a developer interact with.
+    * The logging implementation is what your logging API will use internally and make calls to in order to get logging working.
+    * Both API and implementation is required. it's not one or the other.
+    * slf4j-api is an example of a good logging API. we will be using this shortly.
+    * There are a lot of useful benefits to using slf4j library as your java application logging API layer.
+    * You can think of slf4j as an java interface or facade that would require an implementation(ONLY ONE) at runtime to provide the actual logging details,
+      such as writing to STDOUT(console) or to a file etc. In other words, not a lot of work for you the developer to get up and working.
+
+Logging Implementation - Using logback
+    * Each logging implementation(also called a binding) has their own way of configuring the log output, but your application will remain agnostic and always use the
+      same org.slf4j.LoggerAPI.
+    * Logback is intended as a successor to the popular log4j project, picking up where log4j left off.
+    * Logback is a reliable, fast and flexible logging implementation written in java.
+    * Logback is highly configurable through external configuration files at runtime. It views the logging process in terms of levels of priorities and
+      offers mechanisms to direct logging information to a great variety of destinations including a database, file, console, email etc.
+    * Logback is built using maven.
+    * Logback has three main components:
+        loggers: Responsible for capturing logging information.
+        appenders: Responsible for publishing logging information to various preferred destinations.
+        layouts: Responsible for formatting logging information in different styles.
+
+    * Logback also has filters: based on ternary logic allowing them to be assembled or chained together to compose an arbitrarily complex filtering policy.
+     They are largely inspired by Linuxs iptables.
+
+Advantages of logback:
+    * Logging behavior can be set at runtime using a configuration file.
+    * It uses multiple levels, namely TRACE, DEBUG, WARN, ERROR which controls the granularity, severity and verbosity of information.
+    * The format of the log output can be easily changed by implementing the layout interface.
+    * The target of destination of log output as well as the writing strategy can be modified by switching implementations of the Appender interface.
+    * Logback can automatically reload it's configuration file upon modification.
+    * Logback supports xml and groovy configurations.
+
+Why logback and not log4j
+    * Logback continues where log4j leaves off.
+    * large number of improvements over log4j.
+    * Both logback and log4j were developed by the same author.
+    * Logback has faster implementation.
+    * Logback logger class implements slf4j(zero overhead).
+    * Logback has extensive documentation.
+    * configuration can be done via XML or groovy.
+    * Automatic reloading of configuration files.
+    * Automatic removal of old log archives.
+    * Filters.
+    * And much more.
+
+
