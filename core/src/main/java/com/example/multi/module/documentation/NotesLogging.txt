@@ -45,7 +45,7 @@ Logging Implementation - Using logback
         layouts: Responsible for formatting logging information in different styles.
 
     * Logback also has filters: based on ternary logic allowing them to be assembled or chained together to compose an arbitrarily complex filtering policy.
-     They are largely inspired by Linuxs iptables.
+     They are largely inspired by Linux's iptables.
 
 Advantages of logback:
     * Logging behavior can be set at runtime using a configuration file.
