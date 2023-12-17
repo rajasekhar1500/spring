@@ -1,1 +1,5 @@
-App.class
+com\example\multi\module\App.class
+com\example\multi\module\numbergenerator\NumberGenerator.class
+com\example\multi\module\numbergenerator\impl\GameImpl.class
+com\example\multi\module\numbergenerator\impl\NumberGeneratorImpl.class
+com\example\multi\module\numbergenerator\Game.class
