@@ -1,9 +1,10 @@
 package com.example.multi.module.numbergenerator.impl;
 
 import com.example.multi.module.numbergenerator.NumberGenerator;
+import org.springframework.stereotype.Component;
 
 import java.util.Random;
-
+@Component/*("numberGenerator")*/
 public class NumberGeneratorImpl implements NumberGenerator {
     // ==fields==
     private final Random random = new Random();

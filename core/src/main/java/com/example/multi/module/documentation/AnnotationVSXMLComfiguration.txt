@@ -1,0 +1,35 @@
+Annotation VS XML configuration:-
+
+XML based configurations -PROS
+* The XML supporters talk about separation of concerns. XML configuration is outside the java classes.
+* The whole configuration is limited to a few files and can be viewed easily. If configuration needs to changed then the
+  code does not need to go through the process of recompilation.
+* Using XML helps to centralize configuration metadata and code changes are limited again, to only a few files and can be changed easily, if required.
+* XML configuration is more verbose and may be a better fit for beginners to understand what's going on.
+* In fact I will recommend beginners in spring to stick to an XML configuration initially, and to move on to annotations once comfortable.
+
+XML based configuration -CONS:-
+* XML typing can be error prone and typos are difficult to debug. Even though we have some great tools like intellij that helps us write error free xml
+  configuration files, manual typing sometimes becomes unavoidable.
+* Also XML is not type safe e.g. Java code via the compiler will validate types while compiling, and throw an error if you try to assign the wrong type
+  to a variable. This is also applies to method argument, Since you are passing explicit types to them.
+* The java language is designed to enforce type safety. this safety is not available in XML.
+* XML configuration doesn't take advantage of the features of the language, requiring all kinds of ugly constructs to do what could be done with a simple
+  method in code.
+* For example, in an XML configuration it's possible to add an argument ot a bean's constructor but to forget to inject this argument when defining the bean
+  in the XML. this is not possible with annotations since mistakes of this type will be flagged by the compiler.
+
+
+
+Annotation Based Configuration -PROS:-
+* Using annotations usually leads to shorter and more concise configurations vs XML.
+* Some developers prefer to have their dependency wiring close to the source and hence might prefer annotations over xml.
+* Using annotations ensures type safety. It can also self document a class, so that you can quickly look in the class and see at a glance what is being
+  injected by spring.
+* Annotations reside in your source code.
+* Annotations leads to more decentralized configuration of metadata whereby all the metadata is strewn all over your code base. This might lead to less
+  control over the configuration information.
+* Annotations can clutter your projects POJO's. You could actually argue that it is no longer a POJO anymore if Annotations are added to it.
+* If you change, add or delete, annotations, it requires code recompilation.
+* Annotations may be considered less intuitive nature because of their brevity especially for students new to Spring.
+

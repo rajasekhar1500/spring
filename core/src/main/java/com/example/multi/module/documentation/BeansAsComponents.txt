@@ -1,0 +1,8 @@
+Component Scanning:-
+* Spring provides several stereotype annotations such as the @Component, @Service, and @Controller.
+* The word "Stereotype" means something conforming to a fixed or general pattern.
+* This is quite logical because it is recommended that you annotate your controller classes with @Controller, Service classes with @Service and so on.
+* Stereotype annotations are markers for any class that fulfills a role within an application. This cut downs greatly on the need to use Spring XML based
+  configuration for these components.
+* @Component is a generic stereotype for any Spring-managed component. @Repository, @Service, and @Controller are specializations of @Component for more
+  specific use cases, for instance, in the persistence, service, and presentation layers, respectively.
