@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
-@Component/*("game")*/
+/*@Component*//*("game")*/
 public class GameImpl implements Game {
 
     // == constants ==

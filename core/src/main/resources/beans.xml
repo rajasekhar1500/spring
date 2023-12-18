@@ -1,3 +1,4 @@
+<!--
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:context="http://www.springframework.org/schema/context"
@@ -6,10 +7,10 @@
 		http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
-    <!--<context:annotation-config/>-->
+    &lt;!&ndash;<context:annotation-config/>&ndash;&gt;
     <context:component-scan base-package="com.example.multi.module.numbergenerator.impl"/>
-   <!-- <bean id="numberGenerator" class="com.example.multi.module.numbergenerator.impl.NumberGeneratorImpl"/>
+   &lt;!&ndash; <bean id="numberGenerator" class="com.example.multi.module.numbergenerator.impl.NumberGeneratorImpl"/>
     <bean id = "game" class="com.example.multi.module.numbergenerator.impl.GameImpl">
     &lt;!&ndash;<constructor-arg ref="numberGenerator"/>&ndash;&gt;
-    </bean>-->
-</beans>
+    </bean>&ndash;&gt;
+</beans>-->
