@@ -1,6 +1,7 @@
-com\example\multi\module\numbergenerator\GameImpl.class
-com\example\multi\module\numbergenerator\AppConfig.class
-com\example\multi\module\numbergenerator\App.class
 com\example\multi\module\numbergenerator\NumberGenerator.class
-com\example\multi\module\numbergenerator\NumberGeneratorImpl.class
+com\example\multi\module\numbergenerator\impl\NumberGeneratorImpl.class
+com\example\multi\module\config\AppConfig.class
+com\example\multi\module\numbergenerator\impl\GameImpl.class
 com\example\multi\module\numbergenerator\Game.class
+com\example\multi\module\numbergenerator\impl\MessageGeneratorImpl.class
+com\example\multi\module\numbergenerator\MessageGenerator.class

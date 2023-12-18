@@ -1,6 +1,7 @@
-C:\Users\CV RAJASEKHAR\Desktop\Guess-the-number-game\core\src\main\java\com\example\multi\module\numbergenerator\App.java
-C:\Users\CV RAJASEKHAR\Desktop\Guess-the-number-game\core\src\main\java\com\example\multi\module\numbergenerator\GameImpl.java
-C:\Users\CV RAJASEKHAR\Desktop\Guess-the-number-game\core\src\main\java\com\example\multi\module\numbergenerator\AppConfig.java
+C:\Users\CV RAJASEKHAR\Desktop\Guess-the-number-game\core\src\main\java\com\example\multi\module\config\AppConfig.java
+C:\Users\CV RAJASEKHAR\Desktop\Guess-the-number-game\core\src\main\java\com\example\multi\module\numbergenerator\impl\NumberGeneratorImpl.java
 C:\Users\CV RAJASEKHAR\Desktop\Guess-the-number-game\core\src\main\java\com\example\multi\module\numbergenerator\NumberGenerator.java
 C:\Users\CV RAJASEKHAR\Desktop\Guess-the-number-game\core\src\main\java\com\example\multi\module\numbergenerator\Game.java
-C:\Users\CV RAJASEKHAR\Desktop\Guess-the-number-game\core\src\main\java\com\example\multi\module\numbergenerator\NumberGeneratorImpl.java
+C:\Users\CV RAJASEKHAR\Desktop\Guess-the-number-game\core\src\main\java\com\example\multi\module\numbergenerator\impl\GameImpl.java
+C:\Users\CV RAJASEKHAR\Desktop\Guess-the-number-game\core\src\main\java\com\example\multi\module\numbergenerator\MessageGenerator.java
+C:\Users\CV RAJASEKHAR\Desktop\Guess-the-number-game\core\src\main\java\com\example\multi\module\numbergenerator\impl\MessageGeneratorImpl.java
