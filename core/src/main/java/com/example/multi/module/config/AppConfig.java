@@ -1,8 +1,10 @@
 package com.example.multi.module.config;
 
 import com.example.multi.module.numbergenerator.Game;
+import com.example.multi.module.numbergenerator.MessageGenerator;
 import com.example.multi.module.numbergenerator.NumberGenerator;
 import com.example.multi.module.numbergenerator.impl.GameImpl;
+import com.example.multi.module.numbergenerator.impl.MessageGeneratorImpl;
 import com.example.multi.module.numbergenerator.impl.NumberGeneratorImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -19,5 +21,9 @@ public class AppConfig {
     @Bean
     public Game game() {
         return new GameImpl();
+    }
+    @Bean
+    public MessageGenerator messageGenerator() {
+        return new MessageGeneratorImpl();
     }
 }

@@ -2,6 +2,7 @@ package com.example.multi.module;
 
 import com.example.multi.module.config.AppConfig;
 import com.example.multi.module.numbergenerator.Game;
+import com.example.multi.module.numbergenerator.MessageGenerator;
 import com.example.multi.module.numbergenerator.NumberGenerator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,11 +30,14 @@ public class App {
 
         // log generated number =
         log.info("number: {}", number);
-        // get the game bean from context (container)
-        Game game = context.getBean(Game.class);
-
+/*        // get the game bean from context (container)
+        Game game = context.getBean(Game.class);*/
+        /*game.reset();*/
+        MessageGenerator messageGenerator = context.getBean(MessageGenerator.class);
+        log.info("getMainMessage: {}", messageGenerator.getMainMessage());
+        log.info("getResultMessage: {}", messageGenerator.getResultMessage());
         // call reset method
-        game.reset();
+
 
         // close context (container)
         context.close();
